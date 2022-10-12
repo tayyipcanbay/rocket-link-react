@@ -1,0 +1,68 @@
+.mainNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color:white !important;
+    text-decoration: none;
+    font-size: medium !important;
+
+}
+.brand{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: xx-large!important;
+    font-weight: 1000!important;
+    font-family:'Courier New', Courier, monospace !important;
+}
+nav{
+    /* space between items */
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+    padding: 0 2vw;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+
+}
+.fontLink{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 3vw;
+    margin-bottom: 10px;
+    font-size: large!important;
+    font-weight: 500!important;
+    font-family:'Courier New', Courier, monospace !important;
+    
+    
+}
+.hover {
+    color: red !important;
+    background: 
+      linear-gradient(90deg,#1095c1 50%,#000 0) 
+      var(--_p,100%)/200% no-repeat;
+    -webkit-background-clip: text;
+            background-clip: text;
+    transition: .4s;
+    z-index: 2
+  }
+  .hover:hover {
+    --_p: 0%;
+  }
+  .logo{
+    width: auto;
+    height: 100%;
+    margin-right: 0px;
+  }
+  
