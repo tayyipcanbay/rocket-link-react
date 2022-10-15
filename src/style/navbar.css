@@ -27,16 +27,15 @@ nav{
     display: flex;
     height: 100%;
     align-items: center;
-    margin: auto;
-    margin-right: 10%;
+    margin: auto;   
     background-color: white;
+    width: 70%;
 
 }
 .menu-item{
     list-style: none;
     padding: 0 10px;
     margin: 20px;
-    margin-top: 50px;
     height: 100%;
     width: 100px;
 }
