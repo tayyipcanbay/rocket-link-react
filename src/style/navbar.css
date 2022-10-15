@@ -1,68 +1,61 @@
-.mainNav{
+nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    height: 100px;
+    background-color: white;
+}
+.navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
 }
-a{
-    color:white !important;
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
     text-decoration: none;
-    font-size: medium !important;
+    width: 100px;
+    height:100%;
+    margin: 10px;
+}
+.menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    margin-right: 10%;
 
+}
+.menu-item{
+    list-style: none;
+    padding: 0 10px;
+    margin: 50px;
+    margin-top: 30px;
+    height: 100%;
+    width: 100px;
+    /* add shadow */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    
+}
+.menu-item a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
 }
 .brand{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: xx-large!important;
-    font-weight: 1000!important;
-    font-family:'Courier New', Courier, monospace !important;
-}
-nav{
-    /* space between items */
     display: flex;
-    justify-content: space-between!important;
     align-items: center;
-    padding: 0 2vw;
-    height: 10vh;
-    width: 100%;
-    background-color: black;
-    color: white;
-    font-size: 1.5vw;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-
-}
-.fontLink{
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-right: 3vw;
-    margin-bottom: 10px;
-    font-size: large!important;
-    font-weight: 500!important;
-    font-family:'Courier New', Courier, monospace !important;
-    
-    
-}
-.hover {
-    color: red !important;
-    background: 
-      linear-gradient(90deg,#1095c1 50%,#000 0) 
-      var(--_p,100%)/200% no-repeat;
-    -webkit-background-clip: text;
-            background-clip: text;
-    transition: .4s;
-    z-index: 2
-  }
-  .hover:hover {
-    --_p: 0%;
-  }
-  .logo{
-    width: auto;
+    justify-content: center;
     height: 100%;
-    margin-right: 0px;
-  }
-  
+    width: 20%;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 10px;
+}
