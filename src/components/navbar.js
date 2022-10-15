@@ -5,7 +5,7 @@ import logo from"../assets/roket.png"
 function Navbar(){
     return(
         <nav class="navbar">
-     <div class="logo">MUO</div>
+     <div class="logo">ROCKET LINK</div>
      <ul class="nav-links">
        <input type="checkbox" id="checkbox_toggle" />
        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
