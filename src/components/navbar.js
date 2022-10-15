@@ -14,10 +14,10 @@ function Navbar(){
                         <a href="#">Home</a>
                     </div>    
                     <div className="menu-item">
-                    <a href="#about">About</a>
+                        <a href="#about">About</a>
                     </div>    
                     <div className="menu-item">
-                    <a href="#contact">Contact</a>
+                        <a href="#contact">Contact</a>
                     </div>   
                 </div>
            </div>
