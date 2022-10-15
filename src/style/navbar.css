@@ -27,6 +27,7 @@ nav{
     display: flex;
     height: 100%;
     align-items: center;
+    justify-content:right;
     margin: auto;   
     background-color: white;
     width: 70%;
