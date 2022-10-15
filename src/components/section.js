@@ -3,9 +3,11 @@ import "../style/section.css";
 
 function Section() {
     return(
-        <div>
-            
-        </div>
+        <section>
+            <div className="section">
+                
+            </div>
+        </section>
     )
 }
 export default Section;

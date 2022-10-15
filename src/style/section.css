@@ -1,0 +1,9 @@
+section{
+    background-color: red;
+    width: 80%;
+    margin: auto;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
