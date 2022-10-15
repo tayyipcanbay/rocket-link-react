@@ -1,5 +1,5 @@
 section{
-    background-color: pink;
+    background-color:black;
     width: 80%;
     margin: auto;
     min-height: 400px;
@@ -7,7 +7,7 @@ section{
     justify-content: center;
     align-items: center;
     color: white;
-    margin-top: 100px;
+    margin-top: 5%;
 }
 hr{
     opacity:0.5

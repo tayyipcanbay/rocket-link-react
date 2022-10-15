@@ -13,6 +13,7 @@ nav{
     align-items: center;
     height: 100%;
     padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .logo{
     font-size: 30px;
