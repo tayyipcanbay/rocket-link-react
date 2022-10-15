@@ -18,7 +18,7 @@ function Navbar(){
                     </div>    
                     <div className="menu-item">
                     <a href="#contact">Contact</a>
-                    </div>   
+                    </div>
                 </div>
            </div>
         </nav>
