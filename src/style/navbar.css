@@ -4,7 +4,7 @@ nav{
     left: 0;
     width: 100%;
     height: 100px;
-    background-color: white;
+    background-color: #fff;
 }
 .navbar{
     display: flex;
@@ -37,7 +37,6 @@ nav{
     margin-top: 30px;
     height: 100%;
     width: 100px;
-    
 }
 .menu.menu-item:hover{
     background-color: #fff;
@@ -60,6 +59,4 @@ nav{
     height: 100%;
     width: 20%;
     background-color: #fff;
-    border-radius: 50%;
-    margin: 10px;
 }

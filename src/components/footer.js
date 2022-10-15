@@ -4,7 +4,22 @@ import "../style/footer.css";
 function Footer(){
     return (
         <div>
-            Footer
+            <footer>
+                <div className="footer">
+                    <div className="footer-item">
+                        <h1>ROKET LINK</h1>
+                    </div>
+                    <div className="footer-item">
+                        <h1>ROKET LINK</h1>
+                    </div>
+                    <div className="footer-item">
+                        <h1>ROKET LINK</h1>
+
+                    </div>
+
+                </div>
+                
+            </footer>
         </div>
     );
 }

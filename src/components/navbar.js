@@ -2,7 +2,7 @@ import React from "react";
 import "../style/navbar.css"
 import logo from"../assets/roket.png"
 
-function Header(){
+function Navbar(){
     return(
         <nav>
            <div className="navbar">
@@ -25,4 +25,4 @@ function Header(){
 
     )
 }
-export default Header;
+export default Navbar;
