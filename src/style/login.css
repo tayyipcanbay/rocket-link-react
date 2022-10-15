@@ -1,5 +1,5 @@
 .main{
-    background: whitesmoke;
+    background:cadetblue;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -11,7 +11,7 @@
 .login{
     width: 400px;
     height: 400px;
-    background: #fff;
+    background: whitesmoke;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,7 +20,6 @@
     padding: 70px 30px;
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.5);
-    
 }
 input{
     width: 100%;
@@ -33,8 +32,13 @@ button{
     width: 100%;
     padding: 10px;
     border: none;
-    background: #ff5722;
+    background: rgb(240, 69, 7);
     color: #fff;
     font-size: 18px;
     border-radius: 5px;
+}
+button:hover{
+    background: rgb(250, 132, 90);
+    color: #000;
+    cursor: pointer;
 }

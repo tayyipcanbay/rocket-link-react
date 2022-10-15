@@ -1,8 +1,13 @@
 import React from "react";
 import '../style/login.css';
+import {Link} from 'react-router-dom';
 
 
 function Login() {
+  const loginHandler = (e) => {
+    e.preventDefault();
+    console.log("login");
+  };
   return (
     <div className="main" >
       <div className="login">
@@ -10,7 +15,7 @@ function Login() {
         <form>
           <input type="text" placeholder="Username" />
           <input type="password" placeholder="Password" />
-          <button type="submit">Login</button>
+          <button onClick={loginHandler} type="submit">Login</button>
         </form>
         </div>
     </div>
