@@ -29,7 +29,9 @@ nav{
     height: 100%;
     align-items: center;
     justify-content:right;
-    margin: auto;   
+    margin: auto;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;;  
     background-color: white;
     width: 70%;
 
@@ -37,9 +39,9 @@ nav{
 .menu-item{
     list-style: none;
     padding: 0 10px;
-    margin: 20px;
+    margin: 10px;
     height: 100%;
-    width: 100px;
+    width: fit-content;
 }
 .menu.menu-item:hover{
     background-color: #fff;
@@ -64,5 +66,16 @@ nav{
     background-color: #fff;
 }
 .text{
-    padding: 50px;
+    padding: 10px;
+}
+.loginBox{
+    background-color: lightgreen !important;
+    border-radius: 20px;
+    color: white !important ;
+
+}
+.registerBox{
+    background-color: blue !important ; 
+    border-radius: 20px;
+    color: white !important;
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import "../style/section.css";
 
-function Section({title,description}){
+function Section({id,title,description}){
     return(
-        <section>
+        <section id={id} >
             <div className="section">
                 <header>
                     <h1>{title}</h1><hr></hr>
