@@ -13,7 +13,6 @@ function Section() {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.
                         Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
                     </p>
                 </div>
             </div>
