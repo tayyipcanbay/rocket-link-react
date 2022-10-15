@@ -7,7 +7,7 @@ function Footer(){
             <footer>
                 <div className="footer">
                     <p>
-                        &copy; 2022 Roket Link
+                       2020 © All Rights Reserved. 
                     </p>
                 </div>
 
