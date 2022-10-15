@@ -37,10 +37,11 @@ nav{
     margin-top: 30px;
     height: 100%;
     width: 100px;
-    /* add shadow */
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-radius: 30px;
     
+}
+.menu.menu-item:hover{
+    background-color: #fff;
+    border-radius: 10px;
 }
 .menu-item a{
     text-decoration: none;
@@ -48,6 +49,9 @@ nav{
     font-size: 20px;
     font-weight: bold;
     height: 100%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
 }
 .brand{
     display: flex;
