@@ -29,12 +29,13 @@ nav{
     align-items: center;
     margin: auto;
     margin-right: 10%;
+    background-color: white;
 
 }
 .menu-item{
     list-style: none;
     padding: 0 10px;
-    margin: 50px;
+    margin: 20px;
     margin-top: 50px;
     height: 100%;
     width: 100px;
