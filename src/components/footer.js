@@ -6,19 +6,11 @@ function Footer(){
         <div>
             <footer>
                 <div className="footer">
-                    <div className="footer-item">
-                        <h1>ROKET LINK</h1>
-                    </div>
-                    <div className="footer-item">
-                        <h1>ROKET LINK</h1>
-                    </div>
-                    <div className="footer-item">
-                        <h1>ROKET LINK</h1>
-
-                    </div>
-
+                    <p>
+                        &copy; 2022 Roket Link
+                    </p>
                 </div>
-                
+
             </footer>
         </div>
     );
