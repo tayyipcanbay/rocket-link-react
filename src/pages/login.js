@@ -1,29 +1,9 @@
 import React from "react";
 import '../style/login.css';
-import {Link} from 'react-router-dom';
 
 
 function Login() {
-  const loginHandler = (e) => {
-    e.preventDefault();
-    console.log("login");
-  };
   return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <div className="main" >
-      <div className="login">
-        <h1>Log in!</h1>
-        <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <button onClick={loginHandler} type="submit">Login</button>
-        </form>
-        </div>
-    </div>
-=======
-=======
->>>>>>> 94bf482 (login)
     
     <body>
       <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet"></link>
@@ -50,22 +30,6 @@ function Login() {
 		    	</div>
 	    </div>
       </body>
-<<<<<<< HEAD
->>>>>>> 2436bdc (yeni login)
-=======
-=======
-    <div className="main" >
-      <div className="login">
-        <h1>Log in!</h1>
-        <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
-          <button onClick={loginHandler} type="submit">Login</button>
-        </form>
-        </div>
-    </div>
->>>>>>> 224c895 (login)
->>>>>>> 94bf482 (login)
     );
 }
 
