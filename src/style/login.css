@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-.main{
-    background:cadetblue;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow: hidden;
-}
-.login{
-    width: 400px;
-    height: 400px;
-    background: whitesmoke;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
-=======
-=======
->>>>>>> 94bf482 (login)
 body{
 	margin: 0;
 	padding: 0;
@@ -61,34 +34,6 @@ label{
 	font-weight: bold;
 	cursor: pointer;
 	transition: .5s ease-in-out;
-<<<<<<< HEAD
->>>>>>> 2436bdc (yeni login)
-=======
-=======
-.main{
-    background:cadetblue;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow: hidden;
-}
-.login{
-    width: 400px;
-    height: 400px;
-    background: whitesmoke;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
->>>>>>> 224c895 (login)
->>>>>>> 94bf482 (login)
 }
 input{
 	width: 60%;
@@ -103,24 +48,6 @@ input{
 	border-radius: 5px;
 }
 button{
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: rgb(240, 69, 7);
-    color: #fff;
-    font-size: 18px;
-    border-radius: 5px;
-}
-button:hover{
-    background: rgb(250, 132, 90);
-    color: #000;
-    cursor: pointer;
-}
-=======
-=======
->>>>>>> 94bf482 (login)
 	width: 60%;
 	height: 40px;
 	margin: 10px auto;
@@ -161,22 +88,3 @@ button:hover{
 #chk:checked ~ .signup label{
 	transform: scale(.6);
 }
-<<<<<<< HEAD
->>>>>>> 2436bdc (yeni login)
-=======
-=======
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: rgb(240, 69, 7);
-    color: #fff;
-    font-size: 18px;
-    border-radius: 5px;
-}
-button:hover{
-    background: rgb(250, 132, 90);
-    color: #000;
-    cursor: pointer;
-}
->>>>>>> 224c895 (login)
->>>>>>> 94bf482 (login)
