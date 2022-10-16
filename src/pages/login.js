@@ -27,15 +27,26 @@ function Login() {
 			}
 		}
 		if (hasNumber && hasUpperCase && hasLowerCase && hasSpecial) {
-			console.log(password)
-			console.log("Password is valid");
-			return;
+			e.target.style.border = "3px solid green";
+			return true;
 		} else {
-			console.log(password)
-			console.log("Password is not valid");
-			return;
+			e.target.style.border = "3px solid red";
+			return false;
 		}
 	}
+	const checkUsername = (e) => {
+		let username = e.target.value;
+		if (username.length < 8) {
+			e.target.style.border = "3px solid red";
+			return false;
+		} else {
+			e.target.style.border = "3px solid green";
+			return true;
+		}
+	}
+	//create a function for check email
+
+
 
   return (
 		<div className="out" >
@@ -44,7 +55,7 @@ function Login() {
 			<div className="signup">
 				<form name="form1">
 					<label htmlFor="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required=""></input>
+					<input type="text" onChange={checkUsername} name="txt" placeholder="Username" required=""></input>
 					<input type="email" name="email" placeholder="Email" required=""></input>
 					<input type="password" onChange={checkPassword} name="pswd" placeholder="Password" required=""></input>
 					<button >Sign up</button>
@@ -54,7 +65,7 @@ function Login() {
 			<div className="login">
 					<form name="form1">
 						<label htmlFor="chk" aria-hidden="true">Login</label>
-						<input type="email" name="email" placeholder="Email" required=""></input>
+						<input type="text" onChange={checkUsername} name="username" placeholder="Username" required=""></input>
 						<input type="password" onChange={checkPassword} name="pswd" placeholder="Password" required=""></input>
 						<button >Login</button>
 					</form>
