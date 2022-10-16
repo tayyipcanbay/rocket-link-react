@@ -18,7 +18,7 @@ function Navbar(){
                         <a href="#about">About</a>
                     </div>    
                     <div className="menu-item loginBox">
-                        <Link to="/login">Login</Link>
+                        <Link to="/login">Login | Register</Link>
                     </div>
                 </div>
            </div>
