@@ -20,9 +20,6 @@ function Navbar(){
                     <div className="menu-item loginBox">
                         <Link to="/login">Login</Link>
                     </div>
-                    <div className="menu-item registerBox">
-                        <Link to="/login">Register</Link>
-                    </div>
                 </div>
            </div>
         </nav>
