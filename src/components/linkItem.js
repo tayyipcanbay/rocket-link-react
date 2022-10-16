@@ -3,9 +3,8 @@ import "../style/linkItem.css";
 import styled ,{keyframes} from "styled-components";
 import {bounce} from "react-animations";
 
-function LinkItem(props) {
-    var title="This is gonna be a title";
-    const Bounce=styled.div`animation:2s ${keyframes`${bounce}`}`;
+function LinkItem() {
+    const Bounce= styled.div`animation:2s ${keyframes`${bounce}`}`;
     const link={
         status:"active",
         title:"This is gonna be a title",
