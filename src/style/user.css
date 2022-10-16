@@ -24,6 +24,7 @@
 }
 img{
     border-radius: 50%;
+    box-shadow: 3px 3px 10px #000;
 }
 .user-name{
     margin-top: 10px;
