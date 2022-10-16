@@ -1,0 +1,38 @@
+.user-body{
+    color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #00245B, #6ab1fd);
+}
+.user-container{
+    background: linear-gradient(to bottom, #00EE6E, #0C75E6);
+    box-shadow: 5px 20px 50px #000;
+    color: black;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    min-width: 500px;
+    max-width: 1000px;
+}
+.user-header{
+    width: 90%;
+    height: fit-content;
+    min-height: 100px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+img{
+    border-radius: 50%;
+}
+.user-name{
+    margin-top: 10px;
+}
+.user-bio{
+    padding: 10px;
+}
+.user-content{
+    width: 90%;
+    height: max-content;
+    min-height: 300px;
+    margin: 10px auto;
+}
