@@ -4,7 +4,7 @@
     min-height: 100px;
     background-color: whitesmoke;
     border-radius: 50px;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 10px;
     box-shadow: 5px 20px 50px #000;
 }
@@ -53,4 +53,36 @@ img{
 a{
     text-decoration: none;
     color: black;
+}
+.delete-icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color:paleturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.edit-icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: paleturquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icons{
+    display: inline-flex;
+    width: fit-content;
+    /* float rigt  */
+    float: right;
+}
+.icon:hover{
+    background-color: #00EE6E;
+    cursor: pointer;
 }
