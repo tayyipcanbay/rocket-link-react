@@ -4,6 +4,7 @@ import React from 'react';
 import User from './pages/user';
 import Login from './pages/login';
 import Home from './pages/home';
+import Admin from './pages/admin';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/user" element={<User />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>
     </div>
