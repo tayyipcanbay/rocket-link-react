@@ -42,7 +42,7 @@ function LinkItem() {
                     </div>
                     <div onClick={editLink} className="edit-icon icon">
                         {/* add delete icon */}
-                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-pen-to-square fa-xl"></i>
                     </div>
                </div>
             </div>
