@@ -19,7 +19,7 @@ function Login() {
 					} 	
 				}	
   return (
-		<body>
+		<div className="out" >
 			<div class="main">  	
 				<input type="checkbox" id="chk" aria-hidden="true"></input>
 			<div class="signup">
@@ -41,7 +41,7 @@ function Login() {
 					</form>
 				</div>
 			</div>
-		</body>
+		</div>
     );
 }
 
