@@ -55,7 +55,7 @@ function Login() {
 		}
 	}
 	const loginRequest=(data)=>{
-		fetch("http://localhost:9000/api/users/login",{
+		fetch("https://rocket-link-backend.vercel.app/api/users/login",{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json"
@@ -71,7 +71,7 @@ function Login() {
 		})
 	}
 	const registerRequest=(data)=>{
-		fetch("http://localhost:9000/api/users/register",{
+		fetch("https://rocket-link-backend.vercel.app/api/users/register",{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json"

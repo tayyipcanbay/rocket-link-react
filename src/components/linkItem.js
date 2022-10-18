@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/linkItem.css";
 import styled ,{keyframes} from "styled-components";
 import {bounce} from "react-animations";
 
 
-function LinkItem() {
+function LinkItem(props) {
     const Bounce= styled.div`animation:2s ${keyframes`${bounce}`}`;
     const link={
         status:"active",
@@ -18,6 +18,15 @@ function LinkItem() {
     const deleteLink =(e)=>{
         console.log("delete");
     }
+    useEffect(()=>{
+        const url = window.location.href;
+        if(url.includes("user")){
+            let icons =document.querySelectorAll(".icons")
+            icons.forEach((icon)=>{
+                icon.style.display="none";
+            })
+        }
+    },[])
     return(
         <Bounce>
             <div className="link-body">
@@ -35,7 +44,7 @@ function LinkItem() {
                         </div>
                     </div>
                 </div>
-                <div className="icons">
+                <div id="icons" className="icons">
                 <div onClick={deleteLink} className="delete-icon icon">
                         {/* add delete icon */}
                         <i class="fa-solid fa-trash fa-xl"></i>
