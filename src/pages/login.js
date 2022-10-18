@@ -1,11 +1,5 @@
 import React from "react";
 import '../style/login.css';
-<<<<<<< HEAD
-import {Link} from 'react-router-dom';
-
-
-=======
->>>>>>> 8958ba4 (login eskisi)
 function Login() {
 	const [username, setUsername] = React.useState("");
 	const [password, setPassword] = React.useState("");
