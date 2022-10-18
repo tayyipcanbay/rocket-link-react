@@ -13,7 +13,7 @@ function Login() {
 				e.target.style.border="2px solid red";
 			}
 		}
-		else if (e.target.name==="password"){
+		else if (e.target.name==="pswd"){
 			if(checkPassword(password)){
 				e.target.style.border="2px solid green";
 			}
