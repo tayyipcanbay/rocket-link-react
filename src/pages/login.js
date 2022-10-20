@@ -56,7 +56,7 @@ function Login() {
 				username:username,
 				password:password,
 			}
-			loginRequest(data);
+			console.log(loginRequest(data));
 		}
 		else{
 			return false;
@@ -78,7 +78,7 @@ function Login() {
 		}
 	}
 	const loginRequest=(data)=>{
-		fetch("https://rocket-link-backend.vercel.app/api/users/login",{
+		fetch("http://localhost:9000/api/users/login",{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json"
@@ -94,7 +94,7 @@ function Login() {
 		})
 	}
 	const registerRequest=(data)=>{
-		fetch("https://rocket-link-backend.vercel.app/api/users/register",{
+		fetch("http://localhost:9000/api/users/register",{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json"
@@ -119,7 +119,7 @@ function Login() {
 					<input onChange={(e)=>{inputBorder(e);setUsername(e.target.value)}} id="register-username" type="text" name="username" placeholder="Username" required=""></input>
 					<input onChange={(e)=>{inputBorder(e);setEmail(e.target.value)}} id="register-email" type="email"  name="email" placeholder="Email" required=""></input>
 					<input onChange={(e)=>{inputBorder(e);setPassword(e.target.value)}} id="register-password" type="password"  name="pswd" placeholder="Password" required=""></input>
-					<button >Register</button>
+					<button>Register</button>
 				</form>
 			</div>
 			<div className="login">
@@ -127,7 +127,7 @@ function Login() {
 						<label htmlFor="chk" aria-hidden="true">Login</label>
 						<input onChange={(e)=>{inputBorder(e);setUsername(e.target.value)}} id="login-username" type="text"  name="username" placeholder="Username" required=""></input>
 						<input onChange={(e)=>{inputBorder(e);setPassword(e.target.value)}} id="login-password" type="password"  name="pswd" placeholder="Password" required=""></input>
-						<button onClick={handleLogin} >Login</button>
+						<button>Login</button>
 					</form>
 				</div>
 			</div>
