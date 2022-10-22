@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import '../style/login.css';
 function Login() {
 	const [username, setUsername] = React.useState("");
 	const [password, setPassword] = React.useState("");
 	const [email , setEmail] = React.useState("");
+
 	const inputBorder=(e)=>{
 		if(e.target.name==="username"){
 			if(checkUsername(username)){
@@ -52,11 +53,10 @@ function Login() {
 		e.preventDefault();
 		if(checkUsername() && checkPassword()){
 			let data={
-				firstName:username,
 				username:username,
 				password:password,
 			}
-			console.log(loginRequest(data));
+			loginRequest(data)
 		}
 		else{
 			return false;
@@ -78,6 +78,7 @@ function Login() {
 		}
 	}
 	const loginRequest=(data)=>{
+		console.log("input veriler: ",data);
 		fetch("http://localhost:9000/api/users/login",{
 			method:"POST",
 			headers:{
@@ -88,6 +89,8 @@ function Login() {
 		.then(res=>res.json())
 		.then(data=>{
 			console.log(data);
+			localStorage.setItem("rocket-link-user", JSON.stringify(data));
+			window.location.href="/admin";
 		})
 		.catch(err=>{
 			console.log(err);
