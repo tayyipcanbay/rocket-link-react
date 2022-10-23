@@ -15,26 +15,28 @@ function Admin() {
             setIsAuth(true);
         }
     }, []);
+
     useEffect(() => {
         if(isAuth && ready){
             console.log("admin page");
-            renderPage("loaded");
-            //I want to render the page after the user is authenticated and the page is ready
+            //renderPage("loaded");
         }
         else if(isAuth && !ready){
             console.log("Loading your data...");
-            renderPage("loading");
+            //renderPage("loading");
         }
     }, [isAuth, ready]);
     setTimeout(() => {
         setReady(true);
     }, 2000);
-    const renderPage=(param)=>{           
-            if(param==="loading"){
+    const isLoaded = isAuth && ready;
+    const isLoading = isAuth && !ready;
+    const renderPage=()=>{           
+            if(isLoading){
                 console.log("loading");
                 return <Loading/>
             }
-            else if(param==="loaded"){
+            else if(isLoaded){
                 console.log("loaded");  
                 return(
                     <div className="user-body">
@@ -59,7 +61,7 @@ function Admin() {
     }
     return(
         <div className="admin-body">
-            
+            {renderPage()}
         </div>
     )
 }
