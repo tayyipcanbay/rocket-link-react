@@ -117,6 +117,11 @@ function Admin() {
         )
 
     }
+    const setVisibleCreateLink=(e)=>{
+        e.preventDefault();
+        var createLink=document.querySelectorAll("create-link-title")[0];
+        createLink.style.display="block";
+    }
 
     const isLoaded = isAuth && ready;
     const isLoading = isAuth && !ready;
@@ -137,8 +142,8 @@ function Admin() {
                             </div>
                             <div className="user-content">
                                 <div className="create-link">
-                                    <button className="create-link-button" onClick={(e)=>{e.preventDefault();document.getElementById("create-link-title").style.display="block"}}>Create Link</button>
-                                    <div style={{display:"block"}} className="create-link-title">
+                                    <button className="create-link-button" onClick={setVisibleCreateLink}>Create Link</button>
+                                    <div id="create-link-title" style={{display:"none"}} className="create-link-title">
                                         <pre>Link Ekle</pre>
                                        <div className="create-link-box">
                                             <form onSubmit={createLink}>
