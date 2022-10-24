@@ -10,6 +10,7 @@ function Admin() {
     const [userLinks,setUserLinks]= React.useState([]);
     const [profieImage,setProfileImage]=React.useState("");
     const [username]=React.useState(user.data.username);
+    const [views,setViews]=React.useState(user.data.views_count);
     useEffect(() => {
         if(!user){
             window.location.href="/login";
@@ -137,7 +138,7 @@ function Admin() {
                                 <div className="user-avatar">
                                     <img src={`https://ui-avatars.com/api/?name=${username}&background=0D8ABC&color=fff`} alt="avatar" id="avatar"/>
                                     <div className="user-name"><pre>{username}</pre></div><hr></hr>
-                                    <div className="user-bio"><pre>{user.data.count}</pre></div>
+                                    <div className="user-bio"><pre>{views}</pre></div>
                                 </div>
                             </div>
                             <div className="user-content">
