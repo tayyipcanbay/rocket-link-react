@@ -120,8 +120,9 @@ function Admin() {
     }
     const setVisibleCreateLink=(e)=>{
         e.preventDefault();
-        var createLink=document.querySelectorAll("create-link-title")[0];
-        createLink.style.display="block";
+        var box=e.target.parentElement.children[1];
+        console.log(box);
+        box.style.display="block";
     }
 
     const isLoaded = isAuth && ready;
@@ -138,7 +139,7 @@ function Admin() {
                                 <div className="user-avatar">
                                     <img src={`https://ui-avatars.com/api/?name=${username}&background=0D8ABC&color=fff`} alt="avatar" id="avatar"/>
                                     <div className="user-name"><pre>{username}</pre></div><hr></hr>
-                                    <div className="user-bio"><pre>{views}</pre></div>
+                                    <div className="user-bio"><pre>{views}<br></br>Total Views</pre></div>
                                 </div>
                             </div>
                             <div className="user-content">
