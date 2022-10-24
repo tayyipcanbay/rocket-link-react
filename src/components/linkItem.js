@@ -14,8 +14,6 @@ function LinkItem(props) {
         else{
 
         }},[editable]);
-
-    const Bounce= styled.div`animation:2s ${keyframes`${bounce}`}`;
     const link={
         status:"active",
         title:props.title,
@@ -33,6 +31,7 @@ function LinkItem(props) {
     }
     const deleteLink =(e)=>{
         console.log("delete");
+        props.deleteLink(id);
     }
     useEffect(()=>{
         const url = window.location.href;
