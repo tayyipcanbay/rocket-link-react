@@ -113,7 +113,9 @@ function Admin() {
         .then(res=>res.blob())
         .then(data=>{
             setProfileImage(URL.createObjectURL(data));
-        })
+        }
+        )
+
     }
 
     const isLoaded = isAuth && ready;
@@ -128,7 +130,7 @@ function Admin() {
                         <div className="user-container">
                             <div className="user-header">
                                 <div className="user-avatar">
-                                    <img alt="avatar" id="avatar"/>
+                                    <img src={`https://ui-avatars.com/api/?name=${username}&background=0D8ABC&color=fff`} alt="avatar" id="avatar"/>
                                     <div className="user-name"><pre>{username}</pre></div><hr></hr>
                                     <div className="user-bio"><pre>{user.data.count}</pre></div>
                                 </div>
