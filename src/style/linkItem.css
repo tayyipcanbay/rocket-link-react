@@ -49,6 +49,7 @@ img{
     margin: 20 auto;
     width:100%;
     max-width: 100px;
+    min-width: 100px;
 }
 a{
     text-decoration: none;
@@ -85,4 +86,12 @@ a{
 .icon:hover{
     background-color: #00EE6E;
     cursor: pointer;
+}
+.link-url{
+    padding-top: 20px;
+}
+@media screen and (max-width:800x){
+    .link-body{
+        width:90%
+    }
 }

@@ -12,8 +12,7 @@
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    min-width: 500px;
-    max-width: 1000px;
+    min-width: 768px;
 }
 .user-header{
     width: 90%;
@@ -37,4 +36,7 @@ img{
     height: max-content;
     min-height: 300px;
     margin: 10px auto;
+}
+.create-link-title{
+    display: none;
 }

@@ -20,7 +20,9 @@ function Admin() {
         }
     }, []);
     useEffect(() => {
-        getLinks();
+        setTimeout(() => {
+            getLinks();
+        },1000);
     }, []);
     const saveAndRefresh=(saveTitle,saveLink,id)=>{
         console.log(saveTitle,saveLink);
@@ -121,8 +123,12 @@ function Admin() {
     const setVisibleCreateLink=(e)=>{
         e.preventDefault();
         var box=e.target.parentElement.children[1];
-        console.log(box);
-        box.style.display="block";
+        if(box.style.display==="none"){
+            box.style.display="block";
+        }
+        else{
+            box.style.display="none";
+        }
     }
 
     const isLoaded = isAuth && ready;
@@ -145,8 +151,7 @@ function Admin() {
                             <div className="user-content">
                                 <div className="create-link">
                                     <button className="create-link-button" onClick={setVisibleCreateLink}>Create Link</button>
-                                    <div id="create-link-title" style={{display:"none"}} className="create-link-title">
-                                        <pre>Link Ekle</pre>
+                                    <div id="create-link-title" className="create-link-title">
                                        <div className="create-link-box">
                                             <form onSubmit={createLink}>
                                                 <input type="text" placeholder="Başlık" name="title" id="title" />

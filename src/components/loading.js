@@ -3,7 +3,7 @@ import "../style/loading.css";
 
 function Loading(){
     return(
-        <div className="lds-dual-ring"></div>
+        <div class="loader"></div>
     )
 }
 export default Loading;
