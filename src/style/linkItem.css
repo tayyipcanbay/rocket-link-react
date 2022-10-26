@@ -52,8 +52,8 @@ img{
     max-width: 100px;
     min-width: 100px;
 }
-a{
-    background-color: rgba(47, 190, 47, 0.5);
+.link-url a{
+    background-color: rgba(47, 190, 47, 0.6);
     color: black;
     text-decoration: dashed;
 }
