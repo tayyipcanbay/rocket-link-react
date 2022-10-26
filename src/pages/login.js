@@ -4,6 +4,7 @@ function Login() {
 	const [username, setUsername] = React.useState("");
 	const [password, setPassword] = React.useState("");
 	const [email , setEmail] = React.useState("");
+	const backgroundURL="https://picsum.photos/1920/1080";
 
 	const inputBorder=(e)=>{
 		if(e.target.name==="username"){
@@ -113,7 +114,7 @@ function Login() {
 		})
 	}
   return (
-		<div className="out" >
+		<div style={{backgroundImage:`url(${backgroundURL})`}} className="out" >
 			<div className="main">  	
 				<input type="checkbox" id="chk" aria-hidden="true"></input>
 			<div className="signup">
