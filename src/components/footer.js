@@ -7,7 +7,7 @@ function Footer(){
             <div className="footer">
                 <div className="footer-content">
                     <div className="footer-section about">
-                        <h1 className="logo-text">ROCKET LİNK</h1>
+                        <h1 className="logo-text">ROCKET LINK</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Quisquam, quae.
