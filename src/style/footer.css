@@ -1,5 +1,5 @@
 footer{
-  position: absolute;
+  position: inherit;
   bottom: 0;
   width: 100%;
 }
@@ -49,6 +49,7 @@ footer{
 }
 .about p{
     font-size: 20px;
+    margin-bottom: 30px;
 }
 .about p a{
     color: #fff;
@@ -69,6 +70,11 @@ footer{
     font-size: 20px;
     margin-bottom: 10px;
     display: block;
+}
+.contact span:hover{
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
 }
 .socials{
     text-align: right;
@@ -142,4 +148,39 @@ footer{
 .contact-form button:hover{
     background-color: #000;
     color: #fff;
+}
+@media screen and (max-width: 1000px){
+    .footer-content{
+        flex-direction: column;
+    }.footer-section{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-content-section{
+        width: 100%;
+    }
+    .about{
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        padding: 20px 0;
+    }
+    .contact{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .socials{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .links{
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        padding: 20px 0;
+        border-left: none;
+    }
+    .contact-form{
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+    }
 }

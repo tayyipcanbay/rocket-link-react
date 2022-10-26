@@ -8,8 +8,7 @@ function Home() {
     return (
         <div style={{backgroundColor:"white",width:"100vw",height:"100vh"}}>
             <Navbar />
-            <Section id="home" title="Home" description="This is a description about the website."/>
-            <Section id="about" title="About" description="This is a description about the website."/>
+            <div style={{height:"100vh",backgroundColor:"antiquewhite"}}></div>
             <Footer />
         </div>
     )
