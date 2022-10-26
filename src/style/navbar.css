@@ -1,0 +1,60 @@
+.nav-wrapper{
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-logo{
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.brand-logo:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+.brand-logo.active{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+.nav-wrapper ul{
+    float: right;
+    margin-right: 20px;
+}
+.nav-wrapper ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav-wrapper ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    transition: all 0.3s ease;
+}
+.nav-wrapper ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+.nav-wrapper ul li a.active{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+.nav-wrapper ul li a.active:hover{
+    background-color: #000;
+    color: #fff;
+}
