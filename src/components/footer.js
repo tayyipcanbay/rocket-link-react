@@ -19,29 +19,29 @@ function Footer(){
                             </span>
                         </div>
                         <div className="socials">
-                            <a href="#"><i className="fab fa-facebook"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
-                            <a href="#"><i className="fab fa-twitter"></i></a>
-                            <a href="#"><i className="fab fa-youtube"></i></a>
+                            <a href="https://facebook.com"><i className="fab fa-facebook"></i></a>
+                            <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
+                            <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
+                            <a href="https://youtube.com"><i className="fab fa-youtube"></i></a>
                         </div>
                     </div>
                     <div className="footer-section links">
                         <h2>Quick Links</h2>
                         <br />
                         <ul>
-                            <a href="#">
+                            <a href="#event">
                                 <li>Events</li>
                             </a>
-                            <a href="#">
+                            <a href="#team">
                                 <li>Team</li>
                             </a>
-                            <a href="#">
+                            <a href="#mentors">
                                 <li>Mentors</li>
                             </a>
-                            <a href="#">
+                            <a href="#gallery">
                                 <li>Gallery</li>
                             </a>
-                            <a href="#">
+                            <a href="#terms">
                                 <li>Terms and Conditions</li>
                             </a>
                         </ul>
