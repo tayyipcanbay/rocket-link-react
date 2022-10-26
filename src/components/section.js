@@ -3,8 +3,18 @@ import "../style/section.css";
 
 function Section(props){
     const data=props.data;
+    const scrollNext=()=>{
+        if(data.ref!==""){
+            window.location.href="#"+data.ref;
+            console.log(data.ref);
+        }
+        else if(data.ref===""){
+            window.location.href="#";
+        }
+    }
+
     return(
-        <section style={{backgroundImage:`url(${data.image})`}}>
+        <section onDoubleClick={scrollNext} id={data.id} style={{backgroundImage:`url(${data.image})`}}>
             <div className="section">
                 <div className="section-content">
                     <div className="section-header ">

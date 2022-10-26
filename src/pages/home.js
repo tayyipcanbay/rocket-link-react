@@ -7,21 +7,21 @@ function Home() {
     const data=[
         {
             id: "what-is-rocket-link",
-            title: "ROCKET LINK",
+            title: "WHAT IS ROCKET LINK?",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
             image: "https://picsum.photos/1920/1080",
             ref:"how-can-i-use-rocket-link"
         },
         {
             id: "how-can-i-use-rocket-link",
-            title: "HOW CAN I USE ROCKET LINK",
+            title: "HOW CAN I USE ROCKET LINK?",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
             image: "https://picsum.photos/1920/1080",
             ref:"how-it-works"
         },
         {
             id: "how-it-works",
-            title: "HOW CAN I USE ROCKET LINK",
+            title: "HOW IT WORKS?",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.",
             image: "https://picsum.photos/1920/1080",
             ref:""

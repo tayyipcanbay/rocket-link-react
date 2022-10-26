@@ -58,3 +58,19 @@
     background-color: #000;
     color: #fff;
 }
+@media screen and(max-width: 768px){
+    .nav-wrapper{
+        height: 70px;
+    }
+    .brand-logo{
+        font-size: 20px;
+        margin-top: 0;
+    }
+    .nav-wrapper ul li a{
+        font-size: 16px;
+    }
+    .hide-on-med-and-down{
+        display: none;
+    }
+}
+    
