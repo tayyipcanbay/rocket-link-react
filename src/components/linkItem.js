@@ -79,7 +79,7 @@ function LinkItem(props) {
                                 <div className="link-title-text">
                                     {link.link}
                                     <div className="link-url">
-                                    <a target={"_blank"} href={link.title}>{link.link}</a>
+                                    <a target={"_blank"} href={link.title}>{link.title}</a>
                                 </div>
                                 </div>
                                

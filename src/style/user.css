@@ -1,18 +1,18 @@
 .user-body{
-    color: #ffffff;
+    color: #fff;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #00245B, #6ab1fd);
-
 }
 .user-container{
-    background: linear-gradient(to bottom, #00EE6E, #0C75E6);
+    background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 5px 20px 50px #000;
     color: black;
     width: 80%;
     height: 100%;
     margin: 0 auto;
     min-width: 768px;
+    display: flex;
+    flex-direction: column;
 }
 .user-header{
     width: 90%;
@@ -27,9 +27,11 @@ img{
 }
 .user-name{
     margin-top: 10px;
+    color: #fff;
 }
 .user-bio{
     padding: 10px;
+    color:#fff;
 }
 .user-content{
     width: 90%;
@@ -39,4 +41,39 @@ img{
 }
 .create-link-title{
     display: none;
+}
+.logout-button{
+    width: 150px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: rgba(187, 54, 54, 0.5);
+    border-radius: 20px;
+}
+.logout-button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.create-link-button{
+    height: 50px;
+    margin: 0 auto;
+    background-color: rgba(47, 190, 47, 0.5);
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.create-link-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.6 );
+    width: 60%;
+    margin: 0 auto;
+}
+.create-link{
+    display: flex;
+    flex-direction: column;
+}
+.add-link{
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }

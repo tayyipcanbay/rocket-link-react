@@ -112,12 +112,11 @@ function Admin() {
 
     }
     const getAvatar=(name)=>{
-        fetch("https://ui-avatars.com/api/?name="+name+"&background=0D8ABC&color=fff")
+        fetch("https://ui-avatars.com/api/?name="+name+"&background=000&color=fff")
         .then(res=>res.blob())
         .then(data=>{
             setProfileImage(URL.createObjectURL(data));
-        }
-        )
+        })
 
     }
     const setVisibleCreateLink=(e)=>{
@@ -130,7 +129,11 @@ function Admin() {
             box.style.display="none";
         }
     }
-
+    const logout=()=>{
+        localStorage.removeItem("rocket-link-user");
+        window.location.href="/login";
+    }
+    const backgroundURL="https://picsum.photos/1920/1080";
     const isLoaded = isAuth && ready;
     const isLoading = isAuth && !ready;
     const renderPage=()=>{           
@@ -139,8 +142,9 @@ function Admin() {
             }
             else if(isLoaded){
                 return(
-                    <div className="user-body">
+                    <div style={{backgroundImage:`url(${backgroundURL})`}} className="user-body">
                         <div className="user-container">
+                            <button className="logout-button" onClick={logout} >Logout</button>
                             <div className="user-header">
                                 <div className="user-avatar">
                                     <img src={`https://ui-avatars.com/api/?name=${username}&background=0D8ABC&color=fff`} alt="avatar" id="avatar"/>
@@ -156,7 +160,7 @@ function Admin() {
                                             <form onSubmit={createLink}>
                                                 <input type="text" placeholder="Başlık" name="title" id="title" />
                                                 <input type="text" placeholder="Link" name="link" id="link" />
-                                                <button type="submit">Ekle</button>
+                                                <button className="create-link-button add-link" type="submit">Ekle</button>
                                             </form>
                                        </div>
                                     </div>

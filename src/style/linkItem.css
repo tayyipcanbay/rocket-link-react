@@ -2,7 +2,8 @@
     width: 60%;
     height: fit-content;
     min-height: 100px;
-    background-color: whitesmoke;
+    background-color:rgba(36, 37, 116, 0.541);
+    color:#fff;
     border-radius: 50px;
     margin: 40px auto;
     padding: 10px;
@@ -52,15 +53,20 @@ img{
     min-width: 100px;
 }
 a{
-    text-decoration: none;
+    background-color: rgba(47, 190, 47, 0.5);
     color: black;
+    text-decoration: dashed;
+}
+.link-title-text a{
+    color: #fff;
+    text-decoration: none;
 }
 .delete-icon{
     width: 40px;
     height: 40px;
     margin: 0 10px;
     border-radius: 50%;
-    background-color:paleturquoise;
+    background-color:rgb(190, 49, 49);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +77,7 @@ a{
     height: 40px;
     margin: 0 10px;
     border-radius: 50%;
-    background-color: paleturquoise;
+    background-color:#3d7ec9;
     display: flex;
     justify-content: center;
     align-items: center;
