@@ -5,6 +5,8 @@ function Login() {
 	const [password, setPassword] = React.useState("");
 	const [email , setEmail] = React.useState("");
 
+	const host = "https://rocket-link-backend.vercel.app/api";
+
 	const inputBorder=(e)=>{
 		if(e.target.name==="username"){
 			if(checkUsername(username)){
@@ -79,7 +81,7 @@ function Login() {
 	}
 	const loginRequest=(data)=>{
 		console.log("input veriler: ",data);
-		fetch("http://localhost:9000/api/users/login",{
+		fetch(host + "/users/login",{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json"
@@ -97,7 +99,7 @@ function Login() {
 		})
 	}
 	const registerRequest=(data)=>{
-		fetch("http://localhost:9000/api/users/register",{
+		fetch(host + "/users/register",{
 			method:"POST",
 			headers:{
 				"Content-Type":"application/json"
