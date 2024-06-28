@@ -18,11 +18,11 @@ Rocket Link is a web application that allows users to create personalized pages 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/rocket-link-frontend.git
+    git clone https://github.com/tayyipcanbay/rocket-link-react.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd rocket-link-frontend
+    cd rocket-link-react
     ```
 3. Install the dependencies:
     ```bash
