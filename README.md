@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Rocket Link | Link Sharing App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Rocket Link is a web application that allows users to create personalized pages to share all their links in one place, similar to linktr.ee. Users can register, log in, create, update, and delete links, and manage their profile through the user-friendly interface.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- User Registration and Login
+- Profile Management
+- Link Management (Create, Read, Update, Delete)
+- User Dashboard
+- Admin Panel
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/rocket-link-frontend.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd rocket-link-frontend
+    ```
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### File Structure
 
-### `npm run build`
+- `login.js`: Handles user login and registration.
+- `user.js`: Displays the user's profile page with their links.
+- `admin.js`: Admin panel for managing user links.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Base URL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://rocket-link-backend.vercel.app/api
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### User Endpoints
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Register:** `/users/register` [POST]
+    ```json
+    {
+        "firstName": "string",
+        "lastName": "string",
+        "email": "string",
+        "password": "string",
+        "username": "string"
+    }
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Login:** `/users/login` [POST]
+    ```json
+    {
+        "username": "string",
+        "password": "string"
+    }
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Update Profile Picture:** `/users/profilepic` [POST]
+    - Header: `Authorization: Bearer {{token}}`
+    - FormData: `profilepic: image`
 
-## Learn More
+- **Get User Info:** `/users/` [GET]
+    - Header: `Authorization: Bearer {{token}}`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Link Endpoints
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Create Link:** `/links/` [POST]
+    - Header: `Authorization: Bearer {{token}}`
+    - Body:
+    ```json
+    {
+        "title": "string",
+        "link": "string"
+    }
+    ```
 
-### Code Splitting
+- **Get All User Links (Admin):** `/links/` [GET]
+    - Header: `Authorization: Bearer {{token}}`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Get Active Links by Username:** `/links/:username` [GET]
 
-### Analyzing the Bundle Size
+- **Update Link:** `/links/:id` [PUT]
+    - Header: `Authorization: Bearer {{token}}`
+    - Body:
+    ```json
+    {
+        "title": "string",
+        "link": "string"
+    }
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Delete Link:** `/links/:id` [DELETE]
+    - Header: `Authorization: Bearer {{token}}`
 
-### Making a Progressive Web App
+## Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to fork this project, create a feature branch, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
