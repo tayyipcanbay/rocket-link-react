@@ -110,4 +110,4 @@ Feel free to fork this project, create a feature branch, and submit a pull reque
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT LICENSE](LICENSE).
