@@ -40,7 +40,7 @@ Rocket Link is a web application that allows users to create personalized pages 
 - `admin.js`: Admin panel for managing user links.
 
 ## Backend
-
+Backend developed by [Mustafa Kemal Gördesli](https://github.com/mustafakemalgordesli). You can find the relevant repository [here](https://github.com/mustafakemalgordesli/rocket-link-backend)
 ### Base URL
 
 https://rocket-link-backend.vercel.app/api
